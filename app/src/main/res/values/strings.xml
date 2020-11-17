@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Blood Bank</string>
+    <string name="register_button">Don\'t have an account? <b>Register Here</b></string>
+    <string name="login_button">Already have an account? <b>Login Here</b></string>
+</resources>

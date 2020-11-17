@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MakeRequestActivity">
+
+    <ImageView
+        android:id="@+id/imgView_logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="72dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgView_logo_rays"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:rotation="180"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linlay_inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="30dp"
+        android:alpha="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView_logo_rays">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Write Post For Blood"
+            android:textColor="@color/textHeadline"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_patient_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/ic_person_24"
+            android:drawableLeft="@drawable/ic_person_24"
+            android:drawablePadding="16dp"
+            android:hint="Patient Name"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/et_patient_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/ic_phone_24"
+            android:drawableLeft="@drawable/ic_phone_24"
+            android:drawablePadding="16dp"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:padding="14dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_patient_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/ic_location_24"
+            android:drawableLeft="@drawable/ic_location_24"
+            android:drawablePadding="16dp"
+            android:hint="City"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_patient_bloodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/blood"
+            android:drawableLeft="@drawable/blood"
+            android:drawablePadding="16dp"
+            android:hint="Require Blood Group e.g. AB+"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/ic_message_24"
+            android:drawableLeft="@drawable/ic_message_24"
+            android:drawablePadding="16dp"
+            android:hint="Write Short Message"
+            android:padding="14dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_bg"
+            android:text="Post"
+            android:inputType="textMultiLine"
+            android:textColor="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/post_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_cancel_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Cancel"
+        android:textStyle="bold"
+        android:textColor="@color/textHeadline"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
